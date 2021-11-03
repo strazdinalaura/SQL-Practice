@@ -1,0 +1,17 @@
+-- Select only the faa, name, lat, and lon fields from airports.
+SELECT faa, name, 
+ROUND(lat,2) AS latitude, 
+ROUND(lon,2) AS longtitude
+FROM airports;
+
+-- Return a field, temp_celsius, that converts the measurements of the temp field into Celsius. The formula to use is C = (F - 32) * 5/9.
+SELECT temp - 32 *5/9 AS temp_celsius
+FROM weather;
+
+-- Create and return a field, plane_seats, with the format "This plane seats X." where X is the value of the seats field.
+SELECT CONCAT('This plane seats ', seats) AS plane_seats
+FROM planes;
+
+-- Create and return a field, model_seats.
+SELECT CONCAT('This ', year, INITCAP(manufacturer), model,' seats ', seats) AS model_seats
+FROM planes;
