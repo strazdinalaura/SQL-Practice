@@ -2,4 +2,4 @@
 This repository serves as a collection of SQL drills and practice queries.
 
 ## Instructions for Viewing
-Please open and download each file to view. 
+Please open and/or download each file to view. 
